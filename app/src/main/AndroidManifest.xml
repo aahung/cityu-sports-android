@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xinhong.me.cityusportfacility"
+    android:versionCode="1"
+    android:versionName="0.8">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".USportApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ManageActivity"
+            android:label="@string/title_activity_manage"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BookDateActivity"
+            android:label="Choose date"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BookFacilityActivity"
+            android:label="Choose facility"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BookCourtActivity"
+            android:label="Choose court"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

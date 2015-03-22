@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="xinhong.me.cityusportfacility.AboutActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/githubButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/github_logo"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Open source on"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/githubButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CityU Sport Facility is initialized by Xinhong (xinhong.me), and welcome for everyone's contribution. Project is open sourced on Github. If you contribute to this project, your name will be put on this page."
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.8 (1)"
+        android:id="@+id/versionText"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="feedback"
+        android:id="@+id/feedbackButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="app@xinhong,me"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/feedbackButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
