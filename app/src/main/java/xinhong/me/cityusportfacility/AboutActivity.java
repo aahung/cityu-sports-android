@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.ButterKnife;
@@ -24,6 +25,8 @@ public class AboutActivity extends ActionBarActivity {
     ImageButton githubButton;
     @InjectView(R.id.feedbackButton)
     Button feedBackButton;
+    @InjectView(R.id.versionText)
+    TextView versionText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +58,7 @@ public class AboutActivity extends ActionBarActivity {
         });
 
 
+        versionText.setText(getVersion(this));
     }
 
     public static String getVersion(Context context) {
