@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -193,7 +195,9 @@ public class BookCourtActivity extends ActionBarActivity {
                     courtAdapter.clear();
                     Map<String, Booking[]> courts = (Map<String, Booking[]>)result.objects;
                     universalParameters = (Map<String, String>) result.objects2;
-                    for (String key : courts.keySet()) {
+                    SortedSet<String> sortedKeySet = new TreeSet<String>();
+                    sortedKeySet.addAll(courts.keySet());
+                    for (String key : sortedKeySet) {
                         Booking sectionBooking = new Booking();
                         sectionBooking.id = "section"; // indicating it is a section
                         sectionBooking.timeReadable = key;
